@@ -27,6 +27,7 @@ builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IReserveValidation, DateValidation>();
 builder.Services.AddScoped<IReserveValidation, ServiceWorkingTimeValidation>();
 builder.Services.AddScoped<IReserveValidation, SameReserveValidation>();
+builder.Services.AddScoped<IReserveValidation, SameDateValidation>();
 builder.Services.AddScoped<ReserveValidation>();
 
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
